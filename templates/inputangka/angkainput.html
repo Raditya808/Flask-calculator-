@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+           <title>Input Angka</title> 
+           
+                    
+           <link rel="stylesheet" href="{{ url_for('static', filename='css/input-route/input-route.css') }}">
+        </head>
+        <body>
+             
+            <div> 
+                <main>
+                    <nav>
+                        <ul>    
+                            <li>
+                              <a href="{{url_for('index')}}">Kembali</a>       
+                            </li>
+                        </ul>          
+                    </nav>  
+                </main>
+            </div>
+
+            <!-- form to input the number -->
+            <div class="form-input">
+                <h1>Masukan Angka</h1>
+                    <form method='POST'>
+                        <input type="number" name="a1" placeholder="masukan angka 1" required><br>
+                        <input type="number" name="a2" placeholder="masukan angka 2" required><br>
+                        <input type="text" name="op" placeholder="masukan operator (+,-,x,/)" required><br>
+                          <input type="submit">
+                    </form>
+            </div>
+
+
+            <!-- for button clear the input-->
+            <div class="clear-button">
+                 <button>
+                  <a href="{{url_for('clear')}}">Clear</a>
+                  </button>
+            </div>
+            
+        
+                            
+        </body>
+    </html>
+    
+
+

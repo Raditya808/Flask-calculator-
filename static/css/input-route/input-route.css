@@ -1,0 +1,17 @@
+/* for route input*/
+*{
+  text-align: center; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div,main,nav,ul,li{
+  padding: 0rcap;
+}
+
+
+
+.clear-button{
+  padding:5px;
+}
+
+
