@@ -4,28 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Result</title>
-    <link href="css/style.css" rel="stylesheet">
+    <style>
+      .result-card{
+        text-align: justify;
+      }
+      
+      .result-content{
+        text-align: center;
+      }
+    </style>  
   </head>
   <body>
-
-      <div>
-            <main>
-                  <nav>
-                        <ul>    
-                            <li>
-                              <a href="{{url_for('index')}}">Kembali</a>       
-                            </li>
-                        </ul>          
-                  </nav>  
-            </main>
-      </div>
-
-    <div>
+    <div class="result-card">
       <h1>Result</h1>
-    </div> 
-
-    <div>
+     <div class="result-content">
       <p>{{angka1}} - {{angka2}} = {{hasil}}</p>
     </div>
+  </div>
   </body>
 </html>

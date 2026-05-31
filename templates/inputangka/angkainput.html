@@ -3,10 +3,11 @@
         <head>
            <title>Input Angka</title> 
            
-                    
-           <link rel="stylesheet" href="{{ url_for('static', filename='css/input-route/input-route.css') }}">
+         <link rel="stylesheet" href="{{ url_for('static', filename='/bootstrap/css/input-route/input-route.css') }}">
+            
         </head>
         <body>
+
              
             <div> 
                 <main>
@@ -24,21 +25,35 @@
             <div class="form-input">
                 <h1>Masukan Angka</h1>
                     <form method='POST'>
-                        <input type="number" name="a1" placeholder="masukan angka 1" required><br>
-                        <input type="number" name="a2" placeholder="masukan angka 2" required><br>
-                        <input type="text" name="op" placeholder="masukan operator (+,-,x,/)" required><br>
-                          <input type="submit">
+                        <input type="number" name="a1" placeholder="angka 1"  id="a1"><br>
+                        <input type="number" name="a2" placeholder="angka 2"  id="a2"><br> 
+
+                        <div class="operator">
+                          <div class="operator-content">
+                            <select name="op">
+                                <option value="+">+</option>
+                                <option value="-">-</option>
+                                <option value="x">x</option>
+                                <option value="/">/</option>
+                            </select>
+                          </div>
+                        </div>
+
+                          <button type="submit">kirim</button>
                     </form>
-            </div>
+
+                    
+            
 
 
             <!-- for button clear the input-->
-            <div class="clear-button">
+              <div class="clear-button">
                  <button>
                   <a href="{{url_for('clear')}}">Clear</a>
                   </button>
-            </div>
-            
+              </div>
+
+        </div>
         
                             
         </body>
